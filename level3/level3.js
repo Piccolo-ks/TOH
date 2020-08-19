@@ -27,7 +27,7 @@ $(function(){
   function checkWin(){
     console.log($('[data-stack=3] div').length)
     if($('[data-stack=3] div').length === 6){
-      $('#announce-game-won').after('<button><a href="level2/level2.html">LEVEL 3</a></button>');
+      $('#announce-game-won').text('Next Level Coming Soon');
       // alert('User Wins!');
     }
     }

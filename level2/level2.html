@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Towers of Hanoi - Piccolo</title>
+  <link rel="stylesheet" href="level2.css" />
+</head>
+<body>
+<h1 id="count">120</h1>
+  <div data-stack="1">
+    <div data-block="100"></div>
+    <div data-block="80"></div>
+    <div data-block="60"></div>
+    <div data-block="40"></div>
+    <div data-block="20"></div>
+  </div>
+  <div data-stack="2">
+  </div>
+  <div data-stack="3">
+  </div>
+  <div id="announce-game-won"></div>
+
+  <script type="text/javascript">
+    var counter = 120;
+
+setInterval( function(){
+  counter--;
+
+  if (counter >= 0) {
+    id = document.getElementById("count");
+    id.innerHTML = counter;
+  }
+
+  if ( counter === 0) {
+    location.reload();
+  }
+}, 1000);
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="level2.js"></script>
+</body>
+</html>
